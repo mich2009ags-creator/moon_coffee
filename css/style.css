@@ -1,0 +1,1488 @@
+/* ======================================
+   PALETA — VINTAGE GARDEN
+====================================== */
+
+:root {
+
+    --sand: #E6D2B9;
+    --mocha: #B08F7A;
+    --chocolate: #795138;
+    --espresso: #5B3113;
+
+    --baby-pink: #FFBDDD;
+    --blush: #EFBFC2;
+    --dusty-rose: #CB8D95;
+    --mauve: #A7626B;
+
+    --light-sage: #E5E6B5;
+    --meadow: #CAD77D;
+    --olive: #969752;
+    --moss: #706C3E;
+
+    --cream: #FFFDF3;
+    --text: #4B352B;
+    --text-light: #806E63;
+
+    --white: #FFFFFF;
+
+}
+
+
+/* ======================================
+   RESET
+====================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Quicksand', sans-serif;
+
+    background: var(--cream);
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* ======================================
+   TOPO
+====================================== */
+
+.top-bar {
+
+    background: var(--espresso);
+
+    color: var(--cream);
+
+    text-align: center;
+
+    padding: 9px;
+
+    font-size: 12px;
+
+    letter-spacing: .5px;
+
+}
+
+
+/* ======================================
+   HEADER
+====================================== */
+
+.header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 16px 7%;
+
+    background: rgba(255, 253, 243, .96);
+
+    border-bottom: 1px solid rgba(121, 81, 56, .15);
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.logo-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid var(--chocolate);
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+}
+
+
+.logo strong {
+
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.logo span {
+
+    display: block;
+
+    color: var(--mauve);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* NAV */
+
+.nav {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.nav a {
+
+    font-size: 13px;
+
+    color: var(--text);
+
+    transition: .3s;
+
+}
+
+
+.nav a:hover {
+
+    color: var(--mauve);
+
+}
+
+
+/* CARRINHO */
+
+.cart-button {
+
+    position: relative;
+
+    font-size: 20px;
+
+}
+
+
+#cart-count {
+
+    position: absolute;
+
+    top: -8px;
+
+    right: -10px;
+
+    width: 18px;
+
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--dusty-rose);
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 10px;
+
+}
+
+
+/* ======================================
+   HERO
+====================================== */
+
+.hero {
+
+    min-height: 620px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    padding: 70px 9%;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(255, 189, 221, .4),
+            transparent 30%
+        ),
+
+        var(--cream);
+
+}
+
+
+/* TEXTO */
+
+.hero-content {
+
+    max-width: 600px;
+
+}
+
+
+.eyebrow {
+
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: var(--mauve);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.hero h1 {
+
+    font-family: 'DM Serif Display', Georgia, serif;
+
+    font-size: clamp(50px, 6vw, 78px);
+
+    line-height: 1;
+
+    font-weight: normal;
+
+    color: var(--espresso);
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 span {
+
+    color: var(--dusty-rose);
+
+}
+
+
+.hero p {
+
+    max-width: 520px;
+
+    color: var(--text-light);
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* BOTÕES */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.btn-primary {
+
+    background: var(--chocolate);
+
+    color: white;
+
+}
+
+
+.btn-primary:hover {
+
+    background: var(--espresso);
+
+    transform: translateY(-2px);
+
+}
+
+
+.btn-secondary {
+
+    background: transparent;
+
+    border: 1px solid var(--blush);
+
+    color: var(--mauve);
+
+}
+
+
+.btn-secondary:hover {
+
+    background: var(--blush);
+
+}
+
+
+/* PERSONAGEM */
+
+.hero-character {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 450px;
+
+}
+
+
+.character-circle {
+
+    width: 370px;
+
+    height: 370px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    background: var(--sand);
+
+    border-radius: 48% 52% 45% 55%;
+
+    box-shadow: 0 25px 50px rgba(91, 49, 19, .12);
+
+}
+
+
+.bear {
+
+    font-size: 180px;
+
+    animation: floating 4s ease-in-out infinite;
+
+}
+
+
+.coffee-cup {
+
+    position: absolute;
+
+    right: 55px;
+
+    bottom: 65px;
+
+    font-size: 70px;
+
+    transform: rotate(-8deg);
+
+}
+
+
+.cloud {
+
+    position: absolute;
+
+    font-size: 40px;
+
+    opacity: .6;
+
+}
+
+
+.cloud-one {
+
+    top: 35px;
+
+    left: 50px;
+
+}
+
+
+.cloud-two {
+
+    right: 25px;
+
+    top: 80px;
+
+}
+
+
+.hero-decoration {
+
+    position: absolute;
+
+    font-size: 38px;
+
+}
+
+
+.flower-one {
+
+    bottom: 50px;
+
+    left: 60px;
+
+}
+
+
+.flower-two {
+
+    top: 60px;
+
+    right: 80px;
+
+}
+
+
+@keyframes floating {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+/* ======================================
+   FEATURES
+====================================== */
+
+.features {
+
+    max-width: 1100px;
+
+    margin: -25px auto 0;
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background: var(--sand);
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    box-shadow: 0 10px 30px rgba(91, 49, 19, .08);
+
+}
+
+
+.feature {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 18px;
+
+    border-right: 1px solid rgba(91, 49, 19, .12);
+
+}
+
+
+.feature:last-child {
+
+    border: none;
+
+}
+
+
+.feature > span {
+
+    font-size: 25px;
+
+}
+
+
+.feature strong {
+
+    display: block;
+
+    font-size: 12px;
+
+}
+
+
+.feature p {
+
+    color: var(--text-light);
+
+    font-size: 10px;
+
+}
+
+
+/* ======================================
+   SEÇÕES
+====================================== */
+
+.section {
+
+    padding: 110px 8%;
+
+}
+
+
+.section-title {
+
+    max-width: 600px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+}
+
+
+.section-title h2 {
+
+    font-family: 'DM Serif Display', Georgia, serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1;
+
+    font-weight: normal;
+
+    color: var(--espresso);
+
+    margin-bottom: 15px;
+
+}
+
+
+.section-title p {
+
+    color: var(--text-light);
+
+}
+
+
+/* ======================================
+   CARDÁPIO
+====================================== */
+
+.menu {
+
+    background: #FFF9F2;
+
+}
+
+
+.menu-grid {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.product-card {
+
+    background: var(--white);
+
+    border: 1px solid rgba(121, 81, 56, .12);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 30px rgba(91, 49, 19, .1);
+
+}
+
+
+.product-image {
+
+    height: 210px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 85px;
+
+}
+
+
+.product-image.coffee {
+
+    background: var(--sand);
+
+}
+
+
+.product-image.mocha {
+
+    background: var(--blush);
+
+}
+
+
+.product-image.cookie {
+
+    background: var(--light-sage);
+
+}
+
+
+.product-image.cake {
+
+    background: var(--baby-pink);
+
+}
+
+
+.product-info {
+
+    padding: 20px;
+
+}
+
+
+.product-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.product-title h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    color: var(--chocolate);
+
+}
+
+
+.product-title span {
+
+    color: var(--dusty-rose);
+
+}
+
+
+.product-info p {
+
+    margin: 10px 0 18px;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+
+}
+
+
+.product-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.product-bottom strong {
+
+    color: var(--espresso);
+
+}
+
+
+.add-cart {
+
+    width: 32px;
+
+    height: 32px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--mauve);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+
+.center-button {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
+
+
+/* ======================================
+   PERSONAGENS
+====================================== */
+
+.characters {
+
+    background: var(--cream);
+
+}
+
+
+.characters-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.character-card {
+
+    text-align: center;
+
+    padding: 25px 18px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(121, 81, 56, .1);
+
+    transition: .3s;
+
+}
+
+
+.character-card:hover {
+
+    transform: translateY(-7px);
+
+}
+
+
+.character-avatar {
+
+    width: 130px;
+
+    height: 130px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 75px;
+
+}
+
+
+.bear-bg {
+
+    background: var(--sand);
+
+}
+
+
+.bunny-bg {
+
+    background: var(--baby-pink);
+
+}
+
+
+.cat-bg {
+
+    background: var(--light-sage);
+
+}
+
+
+.fox-bg {
+
+    background: var(--blush);
+
+}
+
+
+.character-card h3 {
+
+    font-family: 'DM Serif Display', Georgia, serif;
+
+    font-size: 25px;
+
+    color: var(--espresso);
+
+}
+
+
+.character-job {
+
+    display: block;
+
+    margin: 3px 0 12px;
+
+    color: var(--mauve);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.character-card p {
+
+    color: var(--text-light);
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    font-style: italic;
+
+}
+
+
+/* ======================================
+   DELIVERY
+====================================== */
+
+.delivery {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 40px 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    background: var(--chocolate);
+
+    color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+}
+
+
+.delivery-character {
+
+    font-size: 100px;
+
+}
+
+
+.delivery h2 {
+
+    font-family: 'DM Serif Display', Georgia, serif;
+
+    font-size: 40px;
+
+    font-weight: normal;
+
+    margin-bottom: 5px;
+
+}
+
+
+.delivery p {
+
+    opacity: .85;
+
+    margin-bottom: 18px;
+
+}
+
+
+.btn-light {
+
+    background: var(--cream);
+
+    color: var(--chocolate);
+
+}
+
+
+/* ======================================
+   SOBRE
+====================================== */
+
+.about {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    padding-left: 0;
+
+    padding-right: 0;
+
+}
+
+
+.about-image {
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--light-sage);
+
+}
+
+
+.shop-illustration {
+
+    position: relative;
+
+    width: 330px;
+
+    height: 300px;
+
+    background: var(--sand);
+
+    border: 4px solid var(--chocolate);
+
+    border-radius: 10px 10px 0 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.shop-sign {
+
+    position: absolute;
+
+    top: 35px;
+
+    padding: 12px 25px;
+
+    background: var(--cream);
+
+    border: 2px solid var(--chocolate);
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    color: var(--chocolate);
+
+}
+
+
+.shop-door {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 115px;
+
+    font-size: 85px;
+
+}
+
+
+.shop-character {
+
+    position: absolute;
+
+    bottom: 0;
+
+    right: 25px;
+
+    font-size: 65px;
+
+}
+
+
+.about-content {
+
+    padding: 90px 10%;
+
+    background: var(--blush);
+
+}
+
+
+.about-content h2 {
+
+    max-width: 500px;
+
+    font-family: 'DM Serif Display', Georgia, serif;
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    font-weight: normal;
+
+    color: var(--espresso);
+
+    margin-bottom: 25px;
+
+}
+
+
+.about-content p {
+
+    max-width: 550px;
+
+    color: var(--text-light);
+
+    margin-bottom: 15px;
+
+}
+
+
+.about-points {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    gap: 15px;
+
+}
+
+
+.about-points div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid rgba(121, 81, 56, .15);
+
+}
+
+
+.about-points span {
+
+    font-size: 22px;
+
+}
+
+
+.about-points strong {
+
+    color: var(--chocolate);
+
+    font-size: 13px;
+
+}
+
+
+/* ======================================
+   CONTATO
+====================================== */
+
+.contact {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.contact h2 {
+
+    font-family: 'DM Serif Display', Georgia, serif;
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    font-weight: normal;
+
+    color: var(--espresso);
+
+    margin-bottom: 20px;
+
+}
+
+
+.contact > div:first-child p {
+
+    max-width: 500px;
+
+    color: var(--text-light);
+
+}
+
+
+.contact-info {
+
+    display: grid;
+
+    gap: 15px;
+
+}
+
+
+.contact-info div {
+
+    padding: 20px;
+
+    background: var(--sand);
+
+    border-radius: 10px;
+
+}
+
+
+.contact-info span {
+
+    display: block;
+
+    color: var(--mauve);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+.footer {
+
+    padding: 45px 8%;
+
+    text-align: center;
+
+    background: var(--espresso);
+
+    color: var(--cream);
+
+}
+
+
+.footer-logo {
+
+    font-family: Georgia, serif;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.footer p {
+
+    font-size: 12px;
+
+    opacity: .75;
+
+}
+
+
+.footer-small {
+
+    margin-top: 8px;
+
+}
+
+
+/* ======================================
+   RESPONSIVIDADE
+====================================== */
+
+@media (max-width: 900px) {
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+
+    .feature:nth-child(2) {
+        border: none;
+    }
+
+    .menu-grid,
+    .characters-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 13px 5%;
+    }
+
+    .logo strong {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .character-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .bear {
+        font-size: 130px;
+    }
+
+    .coffee-cup {
+        font-size: 50px;
+        right: 30px;
+        bottom: 40px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .feature {
+        border: none;
+        border-bottom: 1px solid rgba(91,49,19,.1);
+        padding: 13px;
+    }
+
+    .section {
+        padding: 75px 6%;
+    }
+
+    .menu-grid,
+    .characters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .delivery {
+        margin: 20px;
+        padding: 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .delivery-character {
+        font-size: 80px;
+    }
+
+    .about-content {
+        padding: 70px 7%;
+    }
+
+    .about-content h2,
+    .contact h2 {
+        font-size: 45px;
+    }
+
+    .about-image {
+        min-height: 400px;
+    }
+
+}

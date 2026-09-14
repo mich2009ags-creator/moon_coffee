@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moon Café — Café, carinho e coisas fofas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         TOPO
+    ========================== -->
+
+    <div class="top-bar">
+        ☕ Entregas rápidas e muito carinho para você ♡
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+
+            <div class="logo-icon">
+                ☕
+            </div>
+
+            <div>
+                <strong>MOON CAFÉ</strong>
+                <span>CAFÉ & CO.</span>
+            </div>
+
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#personagens">Nossa turminha</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+
+        <a href="#cardapio" class="cart-button">
+            🛍️
+            <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    ☕ UM CANTINHO ESPECIAL
+                </span>
+
+                <h1>
+                    Café, carinho
+                    <br>
+                    e coisas <span>fofas.</span>
+                </h1>
+
+                <p>
+                    Cafés preparados com carinho, docinhos irresistíveis
+                    e uma turminha pronta para deixar seu dia mais gostoso.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#cardapio" class="btn btn-primary">
+                        Ver cardápio
+                    </a>
+
+                    <a href="#personagens" class="btn btn-secondary">
+                        Conhecer a turminha ♡
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PERSONAGEM PRINCIPAL -->
+
+            <div class="hero-character">
+
+                <div class="cloud cloud-one">☁️</div>
+                <div class="cloud cloud-two">☁️</div>
+
+                <div class="character-circle">
+
+                    <div class="bear">
+                        🐻
+                    </div>
+
+                    <div class="coffee-cup">
+                        ☕
+                    </div>
+
+                </div>
+
+                <div class="hero-decoration flower-one">
+                    🌷
+                </div>
+
+                <div class="hero-decoration flower-two">
+                    🌿
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BENEFÍCIOS
+        ========================== -->
+
+        <section class="features">
+
+            <div class="feature">
+
+                <span>☕</span>
+
+                <div>
+                    <strong>Cafés especiais</strong>
+                    <p>Preparados na hora</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span>♡</span>
+
+                <div>
+                    <strong>Feito com carinho</strong>
+                    <p>Cada detalhe importa</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span>🍰</span>
+
+                <div>
+                    <strong>Doces artesanais</strong>
+                    <p>Fresquinhos todos os dias</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span>🛵</span>
+
+                <div>
+                    <strong>Entrega especial</strong>
+                    <p>Seu pedido até você</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CARDÁPIO
+        ========================== -->
+
+        <section class="section menu" id="cardapio">
+
+            <div class="section-title">
+
+                <span class="eyebrow">
+                    ♡ FEITO PARA VOCÊ
+                </span>
+
+                <h2>
+                    Favoritos da casa
+                </h2>
+
+                <p>
+                    Escolha seu café favorito e deixe a gente cuidar
+                    do resto.
+                </p>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+
+                <!-- PRODUTO 1 -->
+
+                <article class="product-card">
+
+                    <div class="product-image coffee">
+                        ☕
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title">
+
+                            <h3>Latte Aconchego</h3>
+
+                            <span>♡</span>
+
+                        </div>
+
+                        <p>
+                            Café cremoso com leite vaporizado
+                            e um toque especial de baunilha.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>R$ 14,90</strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Latte Aconchego')">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PRODUTO 2 -->
+
+                <article class="product-card">
+
+                    <div class="product-image mocha">
+                        🍫
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title">
+
+                            <h3>Mocha Nuvem</h3>
+
+                            <span>☁️</span>
+
+                        </div>
+
+                        <p>
+                            Café, chocolate e chantilly
+                            para deixar o dia mais doce.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>R$ 15,90</strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Mocha Nuvem')">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PRODUTO 3 -->
+
+                <article class="product-card">
+
+                    <div class="product-image cookie">
+                        🐻
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title">
+
+                            <h3>Cookie Ursinho</h3>
+
+                            <span>🐻</span>
+
+                        </div>
+
+                        <p>
+                            Cookie de chocolate macio
+                            em formato de ursinho.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>R$ 9,90</strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Cookie Ursinho')">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PRODUTO 4 -->
+
+                <article class="product-card">
+
+                    <div class="product-image cake">
+                        🍰
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-title">
+
+                            <h3>Bolo Jardim</h3>
+
+                            <span>🌷</span>
+
+                        </div>
+
+                        <p>
+                            Bolo fofinho com creme,
+                            morangos e flores delicadas.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>R$ 12,90</strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Bolo Jardim')">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="center-button">
+
+                <button class="btn btn-primary">
+                    Ver cardápio completo
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PERSONAGENS
+        ========================== -->
+
+        <section class="section characters" id="personagens">
+
+            <div class="section-title">
+
+                <span class="eyebrow">
+                    🧸 NOSSA TURMINHA
+                </span>
+
+                <h2>
+                    Quem cuida de você?
+                </h2>
+
+                <p>
+                    Conheça os pequenos responsáveis por deixar
+                    o Moon Café ainda mais especial.
+                </p>
+
+            </div>
+
+
+            <div class="characters-grid">
+
+
+                <article class="character-card">
+
+                    <div class="character-avatar bear-bg">
+                        🐻
+                    </div>
+
+                    <h3>Bento</h3>
+
+                    <span class="character-job">
+                        Barista-chefe ☕
+                    </span>
+
+                    <p>
+                        "Um café quentinho resolve quase tudo."
+                    </p>
+
+                </article>
+
+
+
+                <article class="character-card">
+
+                    <div class="character-avatar bunny-bg">
+                        🐰
+                    </div>
+
+                    <h3>Lola</h3>
+
+                    <span class="character-job">
+                        Confeiteira 🍰
+                    </span>
+
+                    <p>
+                        "Mais uma fatia? Eu sabia que você ia querer."
+                    </p>
+
+                </article>
+
+
+
+                <article class="character-card">
+
+                    <div class="character-avatar cat-bg">
+                        🐱
+                    </div>
+
+                    <h3>Milo</h3>
+
+                    <span class="character-job">
+                        Atendente ♡
+                    </span>
+
+                    <p>
+                        "Seu pedido está quase pronto!"
+                    </p>
+
+                </article>
+
+
+
+                <article class="character-card">
+
+                    <div class="character-avatar fox-bg">
+                        🦊
+                    </div>
+
+                    <h3>Nino</h3>
+
+                    <span class="character-job">
+                        Entregador 🛵
+                    </span>
+
+                    <p>
+                        "Seu café está a caminho!"
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BANNER DELIVERY
+        ========================== -->
+
+        <section class="delivery">
+
+            <div class="delivery-character">
+                🦊
+            </div>
+
+            <div>
+
+                <span class="eyebrow">
+                    🛵 DELIVERY
+                </span>
+
+                <h2>
+                    Pediu, chegou! ♡
+                </h2>
+
+                <p>
+                    Seu café favorito sem precisar sair
+                    do conforto de casa.
+                </p>
+
+                <button class="btn btn-light">
+                    Fazer pedido
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SOBRE
+        ========================== -->
+
+        <section class="section about" id="sobre">
+
+            <div class="about-image">
+
+                <div class="shop-illustration">
+
+                    <div class="shop-sign">
+                        MOON
+                        <br>
+                        CAFÉ
+                    </div>
+
+                    <div class="shop-door">
+                        🚪
+                    </div>
+
+                    <div class="shop-character">
+                        🐻
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span class="eyebrow">
+                    ♡ NOSSA HISTÓRIA
+                </span>
+
+                <h2>
+                    Um pequeno café
+                    feito de sonhos.
+                </h2>
+
+                <p>
+                    O Moon Café nasceu da vontade de criar um lugar
+                    onde cada pessoa pudesse desacelerar, tomar um
+                    café gostoso e se sentir em casa.
+                </p>
+
+                <p>
+                    Aqui, cada receita é preparada com cuidado,
+                    cada cantinho tem uma história e nossos
+                    personagens fazem parte da família.
+                </p>
+
+
+                <div class="about-points">
+
+                    <div>
+                        <span>🌿</span>
+                        <strong>Ingredientes selecionados</strong>
+                    </div>
+
+                    <div>
+                        <span>♡</span>
+                        <strong>Preparado com carinho</strong>
+                    </div>
+
+                    <div>
+                        <span>🧸</span>
+                        <strong>Um ambiente acolhedor</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section class="section contact" id="contato">
+
+            <div>
+
+                <span class="eyebrow">
+                    ☕ VENHA NOS VISITAR
+                </span>
+
+                <h2>
+                    Vamos tomar
+                    um café?
+                </h2>
+
+                <p>
+                    Estamos esperando por você.
+                    Traga alguém especial ou venha
+                    simplesmente aproveitar um momento só seu.
+                </p>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <div>
+                    <span>📍 ENDEREÇO</span>
+                    <p>Rua das Flores, 123 — São Paulo</p>
+                </div>
+
+                <div>
+                    <span>🕐 HORÁRIOS</span>
+                    <p>Segunda a sábado — 09h às 20h</p>
+                </div>
+
+                <div>
+                    <span>♡ FALE CONOSCO</span>
+                    <p>(11) 99999-9999</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ☕ MOON CAFÉ
+        </div>
+
+        <p>
+            Café, carinho e coisas fofas. ♡
+        </p>
+
+        <p class="footer-small">
+            © 2026 Moon Café — Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
